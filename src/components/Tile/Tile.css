@@ -1,0 +1,16 @@
+.Tile {
+  background-position: center;
+}
+
+.Tile {
+  min-height: 300px;
+  padding-top: 8rem;
+  color: var(--secondary-accent-color) !important;
+  font-size: 2rem;
+  font-family: "fantasy";
+  text-align: center;
+  text-shadow: -1px -1px 0 var(--primary-text-color),
+    1px -1px 0 var(--primary-color), -1px 1px 0 var(--primary-color),
+    1px 1px 0 var(--primary-text-color);
+  background-repeat: no-repeat;
+}

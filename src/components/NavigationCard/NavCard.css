@@ -1,0 +1,27 @@
+.nav-card {
+  background-position: center;
+}
+
+.parallax {
+  /* width: 100%; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-card {
+  min-height: 300px;
+  padding-top: 8rem;
+  color: white;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background-repeat: no-repeat;
+}
+
+/* .nav-card-header {
+  margin-top: 30%;
+} */

@@ -1,0 +1,51 @@
+.parallax {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4em;
+}
+
+.parallaxText {
+  color: white;
+  font-size: 72px;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: relative;
+  width: 100%;
+}
+
+/* Top left text */
+.top-left {
+  padding-top: 15%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* Top right text */
+.top-right {
+  padding-top: 15%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* Bottom right text */
+.bottom-right {
+  padding-top: 15%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* Centered text */
+.centered {
+  padding-top: 15%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}

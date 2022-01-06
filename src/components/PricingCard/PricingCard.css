@@ -1,0 +1,13 @@
+.pricingCard {
+  /* background-color: var(--primary-color); */
+  color: var(--primary-color);
+  border: 1px solid var(--primary-text-color);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.pricingCard > img {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}

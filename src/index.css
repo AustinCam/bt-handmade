@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #05445e;
+  --secondary-color: #189ab4;
+  --primary-accent-color: #75e6da;
+  --secondary-accent-color: #d4f1f4;
+
+  /* Text Colors */
+  --primary-text-color: black;
+  --secondary-text-color: gray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+hr {
+  background-color: var(--primary-color) !important;
+  margin: 3em !important;
+}
+
+.btn-main {
+  color: var(--secondary-accent-color) !important;
+  background-color: var(--primary-color) !important;
+}
+.btn-main:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--secondary-accent-color) !important;
+}
+
+.btn-alternate {
+  color: var(--primary-color) !important;
+  background-color: var(--secondary-color) !important;
+}
+.btn-alternate:hover {
+  color: var(--secondary-accent-color) !important;
+  background-color: var(--primary-color) !important;
+}
+
+/* Custom Text */
+.primary-header {
+  color: var(--primary-color);
+}
+.secondary-header {
+  color: var(--secondary-text-color);
+}
+
+.home-name {
+  font-size: 150px;
+}
+
+.errorMessage {
+  color: red;
 }
