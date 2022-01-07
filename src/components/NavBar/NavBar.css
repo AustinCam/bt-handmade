@@ -28,3 +28,7 @@ nav > * {
   background-color: lightslategray;
   z-index: 9;
 } */
+
+.Navbar-brand {
+  max-height: 300px;
+}

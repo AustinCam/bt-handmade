@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 
 import HomePage from "./components/HomePage";
-import TrainingPage from "./components/TrainingPage";
+import ProductPage from "./components/ProductPage";
 import AboutPage from "./components/AboutPage";
 import EventPage from "./components/EventPage";
 import ContactPage from "./components/ContactPage";
@@ -19,7 +19,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/product" element={<TrainingPage />} />
+        <Route path="/shop" element={<ProductPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/events" element={<EventPage />} />
         <Route path="/contact" element={<ContactPage />} />

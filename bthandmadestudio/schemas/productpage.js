@@ -35,7 +35,7 @@ export default {
       of: [
         {
           type: "reference",
-          to: [{ type: "package" }],
+          to: [{ type: "product" }],
         },
       ],
     },

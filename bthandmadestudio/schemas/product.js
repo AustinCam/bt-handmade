@@ -1,6 +1,6 @@
 export default {
-  name: "package",
-  title: "Training Packages",
+  name: "product",
+  title: "Products",
   type: "document",
   fields: [
     {

@@ -12,7 +12,6 @@ export default {
       name: "to",
       title: "To",
       type: "string",
-      readOnly: "true",
     },
     {
       name: "position",

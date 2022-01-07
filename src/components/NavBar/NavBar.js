@@ -24,7 +24,12 @@ function NavBar() {
     <>
       <Navbar expand="md">
         <Navbar.Brand href="/" className="col-xs-1 col-lg-1">
-          <img src={Logo} alt="ALT Dog Training Logo" width={"100%"} />
+          <img
+            src={Logo}
+            id="Navbar-brand"
+            alt="ALT Dog Training Logo"
+            width={"100%"}
+          />
           {/* <Logo /> */}
         </Navbar.Brand>
         <div className="container">

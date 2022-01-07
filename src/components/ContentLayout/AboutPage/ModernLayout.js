@@ -7,7 +7,10 @@ import urlBuilder from "@sanity/image-url";
 import Parallax from "../../ParallaxHeader/ParallaxHeader";
 
 const urlFor = (source) =>
-  urlBuilder({ projectId: "s4mmkd89", dataset: "production" }).image(source);
+  urlBuilder({
+    projectId: process.env.REACT_APP_SANITY_PROJECT_ID.toString(),
+    dataset: process.env.REACT_APP_SANITY_DATASET_ID.toString(),
+  }).image(source);
 
 export default function Layout() {
   const [aboutData, setAboutData] = useState(null);
@@ -29,7 +32,6 @@ export default function Layout() {
       .then((data) => setAboutData(data))
       .catch(console.error());
   }, []);
-  console.log(aboutData);
   return (
     <>
       {aboutData &&

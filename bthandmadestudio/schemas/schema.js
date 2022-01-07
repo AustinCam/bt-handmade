@@ -5,12 +5,9 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // We import object and document schemas
 import blockContent from "./blockContent";
-// import category from "./category";
-// import product from "./product";
-// import vendor from "./vendor";
 import navigation from "./navigation";
 import home from "./home";
-import trainingpackage from "./package";
+import trainingpackage from "./product";
 import productpage from "./productpage";
 import aboutpage from "./aboutpage";
 
@@ -34,9 +31,6 @@ export default createSchema({
     aboutpage,
     productpage,
     trainingpackage,
-    // product,
-    // vendor,
-    // category,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
