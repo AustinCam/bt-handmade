@@ -43,7 +43,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p>&copy; 2021-2022 ALT Dog Training / AustinCam Development </p>
+        <p>
+          &copy; 2021-Present / {process.env.REACT_APP_COMPANY_NAME.toString()}
+        </p>
       </footer>
     </>
   );

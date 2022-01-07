@@ -7,9 +7,10 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import blockContent from "./blockContent";
 import navigation from "./navigation";
 import home from "./home";
-import trainingpackage from "./product";
+import product from "./product";
 import productpage from "./productpage";
 import aboutpage from "./aboutpage";
+import contactpage from "./contactpage";
 
 import localeString from "./locale/String";
 import localeText from "./locale/Text";
@@ -30,7 +31,8 @@ export default createSchema({
     home,
     aboutpage,
     productpage,
-    trainingpackage,
+    product,
+    contactpage,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

@@ -12,6 +12,8 @@ import EventPage from "./components/EventPage";
 import ContactPage from "./components/ContactPage";
 
 function App() {
+  document.title = process.env.REACT_APP_COMPANY_NAME;
+
   return (
     <div className="App">
       <div className=" col-lg-12 p-5 h-100">

@@ -44,8 +44,13 @@ hr {
   color: var(--secondary-text-color);
 }
 
-.home-name {
-  font-size: 150px;
+.Toastify__toast-theme--light {
+  color: var(--secondary-accent-color) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.Toastify__close-button--light {
+  color: var(--secondary-accent-color) !important;
 }
 
 .errorMessage {
