@@ -44,15 +44,15 @@ export default function Layout() {
             />
             <div className="container mx-auto">
               <h2 className="mb-5">{about.title}</h2>
-              <div className="grid grid-cols-2">
-                <PortableText content={about.panel1} />
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-2">
+                <PortableText content={about.panel1} className="container" />
                 <div>
                   <img src={urlFor(about.panel2.asset).url()} alt="AboutMe" />
                 </div>
                 <div>
                   <img src={urlFor(about.panel3.asset).url()} alt="AboutMe" />
                 </div>
-                <PortableText content={about.panel4} />
+                <PortableText content={about.panel4} className="container" />
               </div>
             </div>
           </div>

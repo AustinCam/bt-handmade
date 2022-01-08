@@ -15,7 +15,7 @@ export default {
     },
     {
       name: "parallaxheight",
-      title: "Parallax Height",
+      title: "Parallax Height (Recommended: 80)",
       type: "number",
     },
     {

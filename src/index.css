@@ -13,9 +13,21 @@
   --secondary-text-color: gray;
 }
 
+ul {
+  list-style: circle;
+}
+
 hr {
   background-color: var(--primary-color) !important;
   margin: 3em !important;
+}
+
+a {
+  color: var(--primary-color) !important;
+}
+
+a:hover {
+  color: var(--secondary-color) !important;
 }
 
 .btn-main {

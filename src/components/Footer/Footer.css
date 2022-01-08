@@ -1,3 +1,14 @@
-ul {
-  padding-left: 0;
+.social-media-icon {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: auto;
+}
+
+.social-media-container {
+  width: auto;
+}
+
+footer > div > div > div > ul {
+  list-style: none;
 }

@@ -7,7 +7,7 @@ export default function Parallax(props) {
       className="parallax"
       style={{
         backgroundImage: `url(${props.image})`,
-        minHeight: props.height + "em",
+        minHeight: props.height + "vh",
       }}
     >
       <div className="parallaxText centered">{props.text}</div>

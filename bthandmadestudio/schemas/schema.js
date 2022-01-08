@@ -11,12 +11,14 @@ import product from "./product";
 import productpage from "./productpage";
 import aboutpage from "./aboutpage";
 import contactpage from "./contactpage";
+import footer from "./footer";
 
 import localeString from "./locale/String";
 import localeText from "./locale/Text";
 import localeBlockContent from "./locale/BlockContent";
 import tile from "./locale/Tile";
 import HomeContentLayout from "./locale/HomeContentLayout";
+import link from "./locale/Link";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -33,6 +35,8 @@ export default createSchema({
     productpage,
     product,
     contactpage,
+    footer,
+    // link,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
@@ -41,5 +45,6 @@ export default createSchema({
     localeString,
     tile,
     HomeContentLayout,
+    link,
   ]),
 });
