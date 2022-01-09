@@ -1,4 +1,3 @@
-import { Button } from "react-bootstrap";
 import PortableText from "react-portable-text";
 import "./PricingCard.css";
 
@@ -28,7 +27,7 @@ export default function PricingCard(props) {
                 <div class="h-bg-inner"></div>
               </div>
 
-              <a class="cart" href="#">
+              <a class="cart" href="/contact">
                 <span class="price">{"$" + props.price}</span>
                 <span class="add-to-cart">
                   <span class="txt">Add to cart</span>

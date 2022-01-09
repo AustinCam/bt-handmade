@@ -11,7 +11,7 @@ import AboutPage from "./components/AboutPage";
 import EventPage from "./components/EventPage";
 import ContactPage from "./components/ContactPage";
 
-import urlBuilder from "@sanity/image-url";
+// import urlBuilder from "@sanity/image-url";
 
 function App() {
   document.title = process.env.REACT_APP_COMPANY_NAME;
