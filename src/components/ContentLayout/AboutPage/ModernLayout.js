@@ -5,12 +5,6 @@ import { urlFor } from "../../ImageUrl";
 import PortableText from "react-portable-text";
 import Parallax from "../../ParallaxHeader/ParallaxHeader";
 
-// const urlFor = (source) =>
-//   urlBuilder({
-//     projectId: process.env.REACT_APP_SANITY_PROJECT_ID.toString(),
-//     dataset: process.env.REACT_APP_SANITY_DATASET_ID.toString(),
-//   }).image(source);
-
 export default function Layout() {
   const [aboutData, setAboutData] = useState(null);
 
