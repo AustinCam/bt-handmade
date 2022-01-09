@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./NavBar.css";
 import { Navbar, Nav } from "react-bootstrap";
-import Logo from "../../images/Logo.png";
 import { urlFor } from "../ImageUrl";
 import sanityClient from "../../client.js";
 
