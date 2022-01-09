@@ -3,6 +3,7 @@ import "./ProductContent.css";
 import sanityClient from "../../client.js";
 import PricingCard from "../PricingCard/PricingCard.js";
 import PortableText from "react-portable-text";
+import Parallax from "../ParallaxHeader/ParallaxHeader";
 
 export default function ProductContent(props) {
   const [productData, setProductData] = useState(null);
@@ -47,32 +48,29 @@ export default function ProductContent(props) {
       {productData &&
         productData.map((productContent, index) => (
           <div key={"ProductContent" + index}>
-            <div
-              className="parallax"
-              style={{
-                backgroundImage: `url(${productContent.parallaximage.asset.url})`,
-                minHeight: productContent.parallaxheight + "em",
-              }}
-            >
-              <div className="parallaxText centered">
-                {productContent.parallaxtext}
-              </div>
-            </div>
+            <Parallax
+              image={productContent.parallaximage.asset.url}
+              height={productContent.parallaxheight}
+              text={productContent.parallaxtext}
+            />
+
             <div className="container">
               <PortableText content={productContent.contentsection1} />
-              <div className="container grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3"></div>
-              {console.log(productContent.products)}
-              {productContent.products &&
-                productContent.products.map((product, index) => (
-                  <PricingCard
-                    key={product.title + index}
-                    title={product.title}
-                    logo={product.logo.asset.url}
-                    price={product.price}
-                    description={product.description}
-                  />
-                ))}
-              <PortableText content={productContent.contentsection2} />
+              <div className="container grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2">
+                {productContent.products &&
+                  productContent.products.map((product, index) => (
+                    <PricingCard
+                      key={product.title + index}
+                      title={product.title}
+                      logo={product.logo.asset.url}
+                      price={product.price}
+                      description={product.description}
+                    />
+                  ))}
+              </div>
+              <div className="container mt-3">
+                <PortableText content={productContent.contentsection2} />
+              </div>
             </div>
           </div>
         ))}

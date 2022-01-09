@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./ModernLayout.css";
 import sanityClient from "../../../client.js";
+import { urlFor } from "../../ImageUrl";
 import PortableText from "react-portable-text";
-import urlBuilder from "@sanity/image-url";
-
 import Parallax from "../../ParallaxHeader/ParallaxHeader";
 
-const urlFor = (source) =>
-  urlBuilder({
-    projectId: process.env.REACT_APP_SANITY_PROJECT_ID.toString(),
-    dataset: process.env.REACT_APP_SANITY_DATASET_ID.toString(),
-  }).image(source);
+// const urlFor = (source) =>
+//   urlBuilder({
+//     projectId: process.env.REACT_APP_SANITY_PROJECT_ID.toString(),
+//     dataset: process.env.REACT_APP_SANITY_DATASET_ID.toString(),
+//   }).image(source);
 
 export default function Layout() {
   const [aboutData, setAboutData] = useState(null);

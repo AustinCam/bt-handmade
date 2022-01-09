@@ -19,7 +19,7 @@ export default {
       type: "string",
     },
     {
-      title: "Page Header Height (Recommended: 45)",
+      title: "Page Header Height (Recommended: 80)",
       name: "parallaxheight",
       type: "number",
     },

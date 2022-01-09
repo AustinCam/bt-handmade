@@ -2,9 +2,23 @@ import React, { useEffect, useState } from "react";
 import "./NavBar.css";
 import { Navbar, Nav } from "react-bootstrap";
 import Logo from "../../images/Logo.png";
+import { urlFor } from "../ImageUrl";
 import sanityClient from "../../client.js";
 
 function NavBar() {
+  const [logoData, setLogoData] = useState(null);
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "logo"]{
+          title,
+          logo
+          }`
+      )
+      .then((data) => setLogoData(data))
+      .catch(console.error);
+  }, []);
+
   const [navData, setNavData] = useState(null);
   useEffect(() => {
     sanityClient
@@ -24,12 +38,14 @@ function NavBar() {
     <>
       <Navbar expand="md">
         <Navbar.Brand href="/" className="col-xs-2 col-lg-1">
-          <img
-            src={Logo}
-            id="Navbar-brand"
-            alt={process.env.REACT_APP_COMPANY_NAME + " Logo"}
-            width={"100%"}
-          />
+          {logoData && (
+            <img
+              src={urlFor(logoData[0].logo.asset).url()}
+              id="Navbar-brand"
+              alt={process.env.REACT_APP_COMPANY_NAME + " Logo"}
+              width={"100%"}
+            />
+          )}
         </Navbar.Brand>
         <div className="col-xs-10 col-sm-11">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -13,6 +13,10 @@
   --secondary-text-color: gray;
 }
 
+body {
+  background-color: #f7f7f7 !important;
+}
+
 ul {
   list-style: circle;
 }
